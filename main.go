@@ -48,7 +48,7 @@ func main() {
 
 // Keep the Server alive
 func keepServerAlive() {
-	ticker := time.NewTicker(1 * time.Minute)
+	ticker := time.NewTicker(10 * time.Minute)
 	defer ticker.Stop()
 	for range ticker.C {
 		sendRequest()
