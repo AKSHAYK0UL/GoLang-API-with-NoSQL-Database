@@ -40,9 +40,9 @@ func main() {
 	if port == "" {
 		port = "4000"
 	}
-	fmt.Println("Server is Running on 192.168.29.1:", port)
+	fmt.Println("Server is Running on :", port)
 	go keepServerAlive()
-	log.Fatal(http.ListenAndServe("192.168.29.1:"+port, r))
+	log.Fatal(http.ListenAndServe(":"+port, r))
 
 }
 
