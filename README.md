@@ -9,19 +9,29 @@ The API is built using the Go programming language and the Gorilla Mux router fo
 Features:
 
 Create: Add new courses to the database.
+
 Read: Retrieve information about all courses or a specific course by its ID.
+
 Update: Modify existing course data.
+
 Delete: Remove courses from the database, either individually or all at once.
+
 The API supports JSON format for data exchange, making it easy to integrate with frontend or other backend systems. It also includes functionality to keep the server alive by periodically sending requests to a specified URL.
 
 Endpoints:
 
 GET /: Home page.
+
 GET /get: Retrieve all courses.
+
 POST /post: Add a new course.
+
 GET /search/{id}: Search for a course by its ID.
+
 PUT /update/{id}: Update an existing course.
+
 DELETE /del/{id}: Delete a course by its ID.
+
 DELETE /del: Delete all courses from the database.
 
 Database:
